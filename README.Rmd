@@ -1,8 +1,8 @@
 ---
 output: github_document
 title: "Supplementary materials, including data and R Markdown Notebook, for a paper titled *The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia*"
-author: '[Gede Primahadi Wijaya Rajeg](https://udayananetworking.unud.ac.id/lecturer/880-gede-primahadi-wijaya-rajeg) <a itemprop="sameAs" content="https://orcid.org/0000-0002-2047-8621" href="https://orcid.org/0000-0002-2047-8621" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a> [I Made Rajeg](https://udayananetworking.unud.ac.id/lecturer/1817-i-made-rajeg)'
-bibliography: biblio.bib
+author: '[Gede Primahadi Wijaya Rajeg](https://udayananetworking.unud.ac.id/lecturer/880-gede-primahadi-wijaya-rajeg) <a itemprop="sameAs" content="https://orcid.org/0000-0002-2047-8621" href="https://orcid.org/0000-0002-2047-8621" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a> & [I Made Rajeg](https://udayananetworking.unud.ac.id/lecturer/1817-i-made-rajeg) <a itemprop="sameAs" content="https://orcid.org/0000-0001-8989-0203" href="https://orcid.org/0000-0001-8989-0203" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a><br />Universitas Udayana, Indonesia'
+bibliography: [biblio.bib, packages.bib]
 link-citations: yes
 ---
 
@@ -23,8 +23,48 @@ Please cite this repository [@rajeg_codedata_2021] as follows if you use the dat
 
 > Rajeg, Gede Primahadi Wijaya & I Made Rajeg. 2021. Supplementary materials for *The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia*. Open Science Framework (OSF). https://doi.org/10.17605/OSF.IO/Y42F6.
 
-# Description 
+# Overview 
 
-The repository provides supplementary materials for our paper titled *The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia*, presented at the International Seminar on Austronesian Languages and Literature IX (10 September 2021) ([conference website](https://ucs.unud.ac.id/conf/isall-ix)). The materials include data, R Markdown Notebook interleaving our paper-texts and R codes used for the analyses, and the figures included in the paper. The study is based on the open-access, large corpora of colloquial Malay/Indonesian published by the Max Planck Institute for Evolutionary Anthropology (MPI EVA) Jakarta Field Station (JFS) [@gil_data_2015].
+The repository provides supplementary materials for our paper titled *The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia*, presented at the International Seminar on Austronesian Languages and Literature IX (10 September 2021) ([conference website](https://ucs.unud.ac.id/conf/isall-ix)). The materials include (i) the data; (ii) the R Markdown Notebook interleaving our paper-texts and R codes used for writing the whole paper and running the statistical analyses and visualisations; and (iii) the figures included in the paper (see the `figures` folder). The study is based on the open-access, large corpora of naturalistic colloquial Malay/Indonesian published by the [Max Planck Institute for Evolutionary Anthropology (MPI EVA) Jakarta Field Station (JFS)](https://lingweb.eva.mpg.de/archive/jakarta/index.html) [@gil_data_2015].
+
+## Data description
+
+The `data` folder holds the data used in this paper.
+
+- `indo-prov-latlong.csv` provides latitude and longitude data for the whole provinces in Indonesia
+- `malayic_happy_freq_long_lat.tsv` provides the original data for the latitude and longitude and those manually culled from Google Maps
+- `malayic_happy.tsv` contains the original raw data for the HAPPINESS lexicalisation
+- `malayic_LIKE_df.tsv` contains the distribution of morphs glossed as 'to like' in all regions
+- `malayic_LIKE_df_WK_ENT.tsv` contains distribution of morphs glossed as 'to like' in West Kalimantan and East Nusa Tenggara regions
+- `non_acquisition_malayic_sessions_dataset_project.tsv` contains the metadata information for the Malayic subset of the MPI EVA JFS corpora; the metadata include the session names, regions, languoid, word-count per session, genre, mode, among others
+
+## Required R packages
+
+The following R packages are used in the data processing, statistical analyses, visualisation, and knitting the content of the R Markdown Notebook file (`austronesian-paper-2021-gpwrajeg.Rmd`) into MS Word format. Please make sure that they are installed in R to run the codes in the R Notebook and reproduce the results.
+
+- [tidyverse](https://www.tidyverse.org) collection of packages [@tidyverse2019; @R-tidyverse] -- to conduct the data manipulation, processing, and visualisation), especially the functions from the following packages:
+
+  - [dplyr](https://dplyr.tidyverse.org) [@R-dplyr]
+  - [tidyr](https://tidyr.tidyverse.org) [@R-tidyr]
+  - [stringr](https://stringr.tidyverse.org) [@R-stringr]
+  - [ggplot2](https://ggplot2.tidyverse.org) [@R-ggplot2; @ggplot22016]
+  - [readr](https://readr.tidyverse.org) [@R-readr]
+  - [tibble](https://tibble.tidyverse.org) [@R-tibble]
+  
+- [bookdown](https://bookdown.org/home/) [@R-bookdown; @bookdown2016] and [knitr](https://yihui.org/knitr/) [@knitr2015; @R-knitr] -- to print the table and knit the R Markdown Notebook into MS Word document
+- [rmarkdown](https://rmarkdown.rstudio.com) [@R-rmarkdown; @rmarkdown2018; @rmarkdown2020] -- to write the paper, combining the R codes and regular texts
+- [maps](https://cran.r-project.org/web/packages/maps/maps.pdf) [@R-maps] and [mapdata](https://cran.r-project.org/web/packages/mapdata/mapdata.pdf) [@R-mapdata] -- to generate the Indonesian map
+- [ggthemes](https://github.com/jrnold/ggthemes) [@R-ggthemes] -- to customise theme for map visualisation 
+- [ggrepel](R-ggrepel) [@R-ggrepel] -- to make automatic, non-overlapping text labels
+
+The [R Session info](#sess-info) sub-section below shows the R version [@R-base] and operating system used for this project.
+
+## R Session info {#sess-info}
+
+The session info is generated after running all codes in (and knitting) the R Markdown Notebook (hence, after loading all required packages used).
+
+```{r sess-info}
+devtools::session_info()
+```
 
 # References

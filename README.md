@@ -5,8 +5,10 @@ of Indonesia*
 [Gede Primahadi Wijaya
 Rajeg](https://udayananetworking.unud.ac.id/lecturer/880-gede-primahadi-wijaya-rajeg)
 <a itemprop="sameAs" content="https://orcid.org/0000-0002-2047-8621" href="https://orcid.org/0000-0002-2047-8621" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
-[I Made
+& [I Made
 Rajeg](https://udayananetworking.unud.ac.id/lecturer/1817-i-made-rajeg)
+<a itemprop="sameAs" content="https://orcid.org/0000-0001-8989-0203" href="https://orcid.org/0000-0001-8989-0203" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a><br />Universitas
+Udayana, Indonesia
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -29,23 +31,186 @@ Sheet for Linguistics):
 > varieties of Indonesia*. Open Science Framework (OSF).
 > <https://doi.org/10.17605/OSF.IO/Y42F6>.
 
-# Description
+# Overview
 
 The repository provides supplementary materials for our paper titled
 *The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia*,
 presented at the International Seminar on Austronesian Languages and
 Literature IX (10 September 2021) ([conference
 website](https://ucs.unud.ac.id/conf/isall-ix)). The materials include
-data, R Markdown Notebook interleaving our paper-texts and R codes used
-for the analyses, and the figures included in the paper. The study is
-based on the open-access, large corpora of colloquial Malay/Indonesian
-published by the Max Planck Institute for Evolutionary Anthropology (MPI
-EVA) Jakarta Field Station (JFS) ([Gil et al.
-2015](#ref-gil_data_2015)).
+(i) the data; (ii) the R Markdown Notebook interleaving our paper-texts
+and R codes used for writing the whole paper and running the statistical
+analyses and visualisations; and (iii) the figures included in the paper
+(see the `figures` folder). The study is based on the open-access, large
+corpora of naturalistic colloquial Malay/Indonesian published by the
+[Max Planck Institute for Evolutionary Anthropology (MPI EVA) Jakarta
+Field Station
+(JFS)](https://lingweb.eva.mpg.de/archive/jakarta/index.html) ([Gil et
+al. 2015](#ref-gil_data_2015)).
+
+## Data description
+
+The `data` folder holds the data used in this paper.
+
+-   `indo-prov-latlong.csv` provides latitude and longitude data for the
+    whole provinces in Indonesia
+-   `malayic_happy_freq_long_lat.tsv` provides the original data for the
+    latitude and longitude and those manually culled from Google Maps
+-   `malayic_happy.tsv` contains the original raw data for the HAPPINESS
+    lexicalisation
+-   `malayic_LIKE_df.tsv` contains the distribution of morphs glossed as
+    ‘to like’ in all regions
+-   `malayic_LIKE_df_WK_ENT.tsv` contains distribution of morphs glossed
+    as ‘to like’ in West Kalimantan and East Nusa Tenggara regions
+-   `non_acquisition_malayic_sessions_dataset_project.tsv` contains the
+    metadata information for the Malayic subset of the MPI EVA JFS
+    corpora; the metadata include the session names, regions, languoid,
+    word-count per session, genre, mode, among others
+
+## Required R packages
+
+The following R packages are used in the data processing, statistical
+analyses, visualisation, and knitting the content of the R Markdown
+Notebook file (`austronesian-paper-2021-gpwrajeg.Rmd`) into MS Word
+format. Please make sure that they are installed in R to run the codes
+in the R Notebook and reproduce the results.
+
+-   [tidyverse](https://www.tidyverse.org) collection of packages
+    ([Wickham et al. 2019](#ref-tidyverse2019); [Wickham
+    2021b](#ref-R-tidyverse)) – to conduct the data manipulation,
+    processing, and visualisation), especially the functions from the
+    following packages:
+
+    -   [dplyr](https://dplyr.tidyverse.org) ([Wickham et al.
+        2021](#ref-R-dplyr))
+    -   [tidyr](https://tidyr.tidyverse.org) ([Wickham
+        2021a](#ref-R-tidyr))
+    -   [stringr](https://stringr.tidyverse.org) ([Wickham
+        2019](#ref-R-stringr))
+    -   [ggplot2](https://ggplot2.tidyverse.org) ([Wickham et al.
+        2020](#ref-R-ggplot2); [Wickham 2016](#ref-ggplot22016))
+    -   [readr](https://readr.tidyverse.org) ([Wickham and Hester
+        2020](#ref-R-readr))
+    -   [tibble](https://tibble.tidyverse.org) ([Müller and Wickham
+        2021](#ref-R-tibble))
+
+-   [bookdown](https://bookdown.org/home/) ([Xie 2021](#ref-R-bookdown),
+    [2016](#ref-bookdown2016)) and [knitr](https://yihui.org/knitr/)
+    ([Xie 2015](#ref-knitr2015), [2020](#ref-R-knitr)) – to print the
+    table and knit the R Markdown Notebook into MS Word document
+
+-   [rmarkdown](https://rmarkdown.rstudio.com) ([Allaire et al.
+    2021](#ref-R-rmarkdown); [Xie, Allaire, and Grolemund
+    2018](#ref-rmarkdown2018); [Xie, Dervieux, and Riederer
+    2020](#ref-rmarkdown2020)) – to write the paper, combining the R
+    codes and regular texts
+
+-   [maps](https://cran.r-project.org/web/packages/maps/maps.pdf)
+    ([Brownrigg 2018](#ref-R-maps)) and
+    [mapdata](https://cran.r-project.org/web/packages/mapdata/mapdata.pdf)
+    ([Richard A. Becker and Ray Brownrigg. 2018](#ref-R-mapdata)) – to
+    generate the Indonesian map
+
+-   [ggthemes](https://github.com/jrnold/ggthemes) ([Arnold
+    2021](#ref-R-ggthemes)) – to customise theme for map visualisation
+
+-   [ggrepel](R-ggrepel) ([Slowikowski 2020](#ref-R-ggrepel)) – to make
+    automatic, non-overlapping text labels
+
+The [R Session info](#sess-info) sub-section below shows the R version
+([R Core Team 2021](#ref-R-base)) and operating system used for this
+project.
+
+## R Session info
+
+The session info is generated after running all codes in (and knitting)
+the R Markdown Notebook (hence, after loading all required packages
+used).
+
+``` r
+devtools::session_info()
+#> ─ Session info ───────────────────────────────────────────────────────────────
+#>  setting  value                       
+#>  version  R version 4.0.5 (2021-03-31)
+#>  os       macOS Big Sur 10.16         
+#>  system   x86_64, darwin17.0          
+#>  ui       X11                         
+#>  language (EN)                        
+#>  collate  en_US.UTF-8                 
+#>  ctype    en_US.UTF-8                 
+#>  tz       Asia/Makassar               
+#>  date     2021-08-05                  
+#> 
+#> ─ Packages ───────────────────────────────────────────────────────────────────
+#>  package     * version date       lib source        
+#>  assertthat    0.2.1   2019-03-21 [1] CRAN (R 4.0.0)
+#>  backports     1.1.7   2020-05-13 [1] CRAN (R 4.0.0)
+#>  cachem        1.0.5   2021-05-15 [1] CRAN (R 4.0.2)
+#>  callr         3.6.0   2021-03-28 [1] CRAN (R 4.0.2)
+#>  cli           2.4.0   2021-04-05 [1] CRAN (R 4.0.2)
+#>  crayon        1.4.1   2021-02-08 [1] CRAN (R 4.0.2)
+#>  desc          1.2.0   2018-05-01 [1] CRAN (R 4.0.0)
+#>  devtools      2.3.0   2020-04-10 [1] CRAN (R 4.0.0)
+#>  digest        0.6.25  2020-02-23 [1] CRAN (R 4.0.0)
+#>  ellipsis      0.3.1   2020-05-15 [1] CRAN (R 4.0.0)
+#>  evaluate      0.14    2019-05-28 [1] CRAN (R 4.0.0)
+#>  fastmap       1.0.1   2019-10-08 [1] CRAN (R 4.0.0)
+#>  fs            1.4.1   2020-04-04 [1] CRAN (R 4.0.0)
+#>  glue          1.4.1   2020-05-13 [1] CRAN (R 4.0.0)
+#>  htmltools     0.4.0   2019-10-04 [1] CRAN (R 4.0.0)
+#>  knitr         1.30    2020-09-22 [1] CRAN (R 4.0.2)
+#>  magrittr      2.0.1   2020-11-17 [1] CRAN (R 4.0.2)
+#>  memoise       2.0.0   2021-01-26 [1] CRAN (R 4.0.2)
+#>  pkgbuild      1.0.8   2020-05-07 [1] CRAN (R 4.0.0)
+#>  pkgload       1.1.0   2020-05-29 [1] CRAN (R 4.0.0)
+#>  prettyunits   1.1.1   2020-01-24 [1] CRAN (R 4.0.0)
+#>  processx      3.5.1   2021-04-04 [1] CRAN (R 4.0.2)
+#>  ps            1.6.0   2021-02-28 [1] CRAN (R 4.0.2)
+#>  R6            2.4.1   2019-11-12 [1] CRAN (R 4.0.0)
+#>  Rcpp          1.0.7   2021-07-07 [1] CRAN (R 4.0.2)
+#>  remotes       2.1.1   2020-02-15 [1] CRAN (R 4.0.0)
+#>  rlang         0.4.11  2021-04-30 [1] CRAN (R 4.0.2)
+#>  rmarkdown     2.7     2021-02-19 [1] CRAN (R 4.0.2)
+#>  rprojroot     1.3-2   2018-01-03 [1] CRAN (R 4.0.0)
+#>  sessioninfo   1.1.1   2018-11-05 [1] CRAN (R 4.0.0)
+#>  stringi       1.5.3   2020-09-09 [1] CRAN (R 4.0.2)
+#>  stringr       1.4.0   2019-02-10 [1] CRAN (R 4.0.0)
+#>  testthat      3.0.2   2021-02-14 [1] CRAN (R 4.0.2)
+#>  usethis       1.6.1   2020-04-29 [1] CRAN (R 4.0.0)
+#>  withr         2.4.1   2021-01-26 [1] CRAN (R 4.0.2)
+#>  xfun          0.22    2021-03-11 [1] CRAN (R 4.0.2)
+#>  yaml          2.2.1   2020-02-01 [1] CRAN (R 4.0.0)
+#> 
+#> [1] /Users/Primahadi/Rlibs
+#> [2] /Library/Frameworks/R.framework/Versions/4.0/Resources/library
+```
 
 # References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-R-rmarkdown" class="csl-entry">
+
+Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin
+Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and
+Richard Iannone. 2021. *Rmarkdown: Dynamic Documents for r*.
+<https://CRAN.R-project.org/package=rmarkdown>.
+
+</div>
+
+<div id="ref-R-ggthemes" class="csl-entry">
+
+Arnold, Jeffrey B. 2021. *Ggthemes: Extra Themes, Scales and Geoms for
+Ggplot2*. <https://github.com/jrnold/ggthemes>.
+
+</div>
+
+<div id="ref-R-maps" class="csl-entry">
+
+Brownrigg, Ray. 2018. *Maps: Draw Geographical Maps*.
+<https://CRAN.R-project.org/package=maps>.
+
+</div>
 
 <div id="ref-gil_data_2015" class="csl-entry">
 
@@ -56,12 +221,149 @@ Institute for Evolutionary Anthropology, 1999-2015.”
 
 </div>
 
+<div id="ref-R-tibble" class="csl-entry">
+
+Müller, Kirill, and Hadley Wickham. 2021. *Tibble: Simple Data Frames*.
+<https://CRAN.R-project.org/package=tibble>.
+
+</div>
+
+<div id="ref-R-base" class="csl-entry">
+
+R Core Team. 2021. *R: A Language and Environment for Statistical
+Computing*. Vienna, Austria: R Foundation for Statistical Computing.
+<https://www.R-project.org/>.
+
+</div>
+
 <div id="ref-rajeg_codedata_2021" class="csl-entry">
 
 Rajeg, Gede Primahadi Wijaya, and I Made Rajeg. 2021. “Supplementary
 Materials for *The* *Lexicalisation of* *HAPPINESS* *in the* *Malayic*
 *Varieties of* *Indonesia*.” *Open Science Framework (OSF)*.
 <https://doi.org/10.17605/OSF.IO/Y42F6>.
+
+</div>
+
+<div id="ref-R-mapdata" class="csl-entry">
+
+Richard A. Becker, Original S code by, and Allan R. Wilks. R version by
+Ray Brownrigg. 2018. *Mapdata: Extra Map Databases*.
+<https://CRAN.R-project.org/package=mapdata>.
+
+</div>
+
+<div id="ref-R-ggrepel" class="csl-entry">
+
+Slowikowski, Kamil. 2020. *Ggrepel: Automatically Position
+Non-Overlapping Text Labels with Ggplot2*.
+<http://github.com/slowkow/ggrepel>.
+
+</div>
+
+<div id="ref-ggplot22016" class="csl-entry">
+
+Wickham, Hadley. 2016. *Ggplot2: Elegant Graphics for Data Analysis*.
+Springer-Verlag New York. <https://ggplot2.tidyverse.org>.
+
+</div>
+
+<div id="ref-R-stringr" class="csl-entry">
+
+———. 2019. *Stringr: Simple, Consistent Wrappers for Common String
+Operations*. <https://CRAN.R-project.org/package=stringr>.
+
+</div>
+
+<div id="ref-R-tidyr" class="csl-entry">
+
+———. 2021a. *Tidyr: Tidy Messy Data*.
+<https://CRAN.R-project.org/package=tidyr>.
+
+</div>
+
+<div id="ref-R-tidyverse" class="csl-entry">
+
+———. 2021b. *Tidyverse: Easily Install and Load the Tidyverse*.
+<https://CRAN.R-project.org/package=tidyverse>.
+
+</div>
+
+<div id="ref-tidyverse2019" class="csl-entry">
+
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy
+D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019.
+“Welcome to the <span class="nocase">tidyverse</span>.” *Journal of Open
+Source Software* 4 (43): 1686. <https://doi.org/10.21105/joss.01686>.
+
+</div>
+
+<div id="ref-R-ggplot2" class="csl-entry">
+
+Wickham, Hadley, Winston Chang, Lionel Henry, Thomas Lin Pedersen,
+Kohske Takahashi, Claus Wilke, Kara Woo, Hiroaki Yutani, and Dewey
+Dunnington. 2020. *Ggplot2: Create Elegant Data Visualisations Using the
+Grammar of Graphics*. <https://CRAN.R-project.org/package=ggplot2>.
+
+</div>
+
+<div id="ref-R-dplyr" class="csl-entry">
+
+Wickham, Hadley, Romain François, Lionel Henry, and Kirill Müller. 2021.
+*Dplyr: A Grammar of Data Manipulation*.
+<https://CRAN.R-project.org/package=dplyr>.
+
+</div>
+
+<div id="ref-R-readr" class="csl-entry">
+
+Wickham, Hadley, and Jim Hester. 2020. *Readr: Read Rectangular Text
+Data*. <https://CRAN.R-project.org/package=readr>.
+
+</div>
+
+<div id="ref-knitr2015" class="csl-entry">
+
+Xie, Yihui. 2015. *Dynamic Documents with R and Knitr*. 2nd ed. Boca
+Raton, Florida: Chapman; Hall/CRC. <https://yihui.org/knitr/>.
+
+</div>
+
+<div id="ref-bookdown2016" class="csl-entry">
+
+———. 2016. *Bookdown: Authoring Books and Technical Documents with R
+Markdown*. Boca Raton, Florida: Chapman; Hall/CRC.
+<https://bookdown.org/yihui/bookdown>.
+
+</div>
+
+<div id="ref-R-knitr" class="csl-entry">
+
+———. 2020. *Knitr: A General-Purpose Package for Dynamic Report
+Generation in r*. <https://yihui.org/knitr/>.
+
+</div>
+
+<div id="ref-R-bookdown" class="csl-entry">
+
+———. 2021. *Bookdown: Authoring Books and Technical Documents with r
+Markdown*. <https://CRAN.R-project.org/package=bookdown>.
+
+</div>
+
+<div id="ref-rmarkdown2018" class="csl-entry">
+
+Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. *R Markdown: The
+Definitive Guide*. Boca Raton, Florida: Chapman; Hall/CRC.
+<https://bookdown.org/yihui/rmarkdown>.
+
+</div>
+
+<div id="ref-rmarkdown2020" class="csl-entry">
+
+Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. *R Markdown
+Cookbook*. Boca Raton, Florida: Chapman; Hall/CRC.
+<https://bookdown.org/yihui/rmarkdown-cookbook>.
 
 </div>
 
