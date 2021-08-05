@@ -15,7 +15,8 @@ Udayana, Indonesia
 # License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
-[![DOI](https://img.shields.io/badge/OSF-Y42F6-blue.svg?link=https://osf.io/Y42F6/)](https://osf.io/y42f6/)<br />This
+[![DOI](https://img.shields.io/badge/OSF-Y42F6-blue.svg?link=https://osf.io/Y42F6/)](https://osf.io/y42f6/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5163995.svg)](https://doi.org/10.5281/zenodo.5163995)<br />This
 repository is licensed with the
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
 Commons Attribution-NonCommercial-ShareAlike 4.0 International
