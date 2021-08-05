@@ -12,11 +12,22 @@ Rajeg](https://udayananetworking.unud.ac.id/lecturer/1817-i-made-rajeg)
 
 # License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /><br />This
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+[![DOI](https://img.shields.io/badge/OSF-Y42F6-blue.svg?link=https://osf.io/Y42F6/)](https://osf.io/y42f6/)<br />This
 repository is licensed with the
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
 Commons Attribution-NonCommercial-ShareAlike 4.0 International
 License</a>.
+
+Please cite this repository ([Rajeg and Rajeg
+2021](#ref-rajeg_codedata_2021)) as follows if you use the data and
+other materials here in your research and/or teaching (in Unified Style
+Sheet for Linguistics):
+
+> Rajeg, Gede Primahadi Wijaya & I Made Rajeg. 2021. Supplementary
+> materials for *The lexicalisation of HAPPINESS in the Malayic
+> varieties of Indonesia*. Open Science Framework (OSF).
+> <https://doi.org/10.17605/OSF.IO/Y42F6>.
 
 # Description
 
@@ -42,6 +53,15 @@ Gil, David, Uri Tadmor, John Bowden, and Bradley Taylor. 2015. “Data
 from the Jakarta Field Station, Department of Linguistics, Max Planck
 Institute for Evolutionary Anthropology, 1999-2015.”
 <https://lingweb.eva.mpg.de/archive/jakarta/data.php.html>.
+
+</div>
+
+<div id="ref-rajeg_codedata_2021" class="csl-entry">
+
+Rajeg, Gede Primahadi Wijaya, and I Made Rajeg. 2021. “Supplementary
+Materials for *The* *Lexicalisation of* *HAPPINESS* *in the* *Malayic*
+*Varieties of* *Indonesia*.” *Open Science Framework (OSF)*.
+<https://doi.org/10.17605/OSF.IO/Y42F6>.
 
 </div>
 

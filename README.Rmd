@@ -17,7 +17,11 @@ knitr::opts_chunk$set(
 
 # License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /><br />This repository is licensed with the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /> [![DOI](https://img.shields.io/badge/OSF-Y42F6-blue.svg?link=https://osf.io/Y42F6/)](https://osf.io/y42f6/)<br />This repository is licensed with the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+Please cite this repository [@rajeg_codedata_2021] as follows if you use the data and other materials here in your research and/or teaching (in Unified Style Sheet for Linguistics):
+
+> Rajeg, Gede Primahadi Wijaya & I Made Rajeg. 2021. Supplementary materials for *The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia*. Open Science Framework (OSF). https://doi.org/10.17605/OSF.IO/Y42F6.
 
 # Description 
 
