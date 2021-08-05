@@ -123,10 +123,6 @@ project.
 
 ## R Session info
 
-The session info is generated after running all codes in (and knitting)
-the R Markdown Notebook (hence, after loading all required packages
-used).
-
 ``` r
 devtools::session_info()
 #> ─ Session info ───────────────────────────────────────────────────────────────

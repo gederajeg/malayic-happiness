@@ -61,8 +61,6 @@ The [R Session info](#sess-info) sub-section below shows the R version [@R-base]
 
 ## R Session info {#sess-info}
 
-The session info is generated after running all codes in (and knitting) the R Markdown Notebook (hence, after loading all required packages used).
-
 ```{r sess-info}
 devtools::session_info()
 ```
