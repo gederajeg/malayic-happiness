@@ -16,13 +16,13 @@ Udayana, Indonesia
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
 [![DOI](https://img.shields.io/badge/OSF-Y42F6-blue.svg?link=https://osf.io/Y42F6/)](https://osf.io/y42f6/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5163995.svg)](https://doi.org/10.5281/zenodo.5163995)<br />This
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5166425.svg)](https://doi.org/10.5281/zenodo.5166425)<br />This
 repository is licensed with the
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
 Commons Attribution-NonCommercial-ShareAlike 4.0 International
 License</a>.
 
-Please cite this repository ([Rajeg and Rajeg
+Please cite this repository (in OSF) ([Rajeg and Rajeg
 2021](#ref-rajeg_codedata_2021)) as follows if you use the data and
 other materials here in your research and/or teaching (in Unified Style
 Sheet for Linguistics):
@@ -31,6 +31,14 @@ Sheet for Linguistics):
 > materials for *The lexicalisation of HAPPINESS in the Malayic
 > varieties of Indonesia*. Open Science Framework (OSF).
 > <https://doi.org/10.17605/OSF.IO/Y42F6>.
+
+Or using the [Zenodo](https://doi.org/10.5281/zenodo.5166425) repository
+version:
+
+> Rajeg, Gede Primahadi Wijaya & I Made Rajeg. 2021. Supplementary
+> materials for *The lexicalisation of HAPPINESS in the Malayic
+> varieties of Indonesia*. Zenodo.
+> <https://doi.org/10.5281/zenodo.5166425>.
 
 # Overview
 
@@ -136,7 +144,7 @@ devtools::session_info()
 #>  collate  en_US.UTF-8                 
 #>  ctype    en_US.UTF-8                 
 #>  tz       Asia/Makassar               
-#>  date     2021-08-05                  
+#>  date     2021-08-06                  
 #> 
 #> ─ Packages ───────────────────────────────────────────────────────────────────
 #>  package     * version date       lib source        
