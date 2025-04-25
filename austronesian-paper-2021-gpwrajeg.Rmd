@@ -3,11 +3,24 @@ title: "The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia"
 author: "[Gede Primahadi Wijaya Rajeg](https://udayananetworking.unud.ac.id/lecturer/880-gede-primahadi-wijaya-rajeg) & [I Made Rajeg](https://udayananetworking.unud.ac.id/lecturer/1817-i-made-rajeg)"
 date: "Universitas Udayana, Indonesia"
 output: 
+  bookdown::html_notebook2: 
+    fig_caption: true
+    toc_float: true
+    toc: true
+    number_sections: true
+    theme: cosmo
+    highlight: zenburn
+  html_document: 
+    fig_caption: true
+    toc_float: true
+    toc: true
+    number_sections: true
+    theme: cosmo
+    highlight: zenburn
   bookdown::word_document2:
     fig_caption: true
     fig_width: 6
     reference_docx: "austronesian-abstract-2021-gpwrajeg-temp.docx"
-  html_notebook: default
 link-citations: yes
 bibliography: biblio.bib
 csl: 'apa.csl'
@@ -345,9 +358,15 @@ This paper explores the lexicalisation of HAPPINESS in the Malayic varieties spo
 
 **Keywords**: HAPPINESS; lexicalisation; colloquial Malayic varieties; corpus linguistics; MPI EVA JFS
 
-# Introduction {-}
+# How to cite {-}
 
-## On the notions of Lexicon and Lexicalisation {-}
+> Rajeg, Gede Primahadi Wijaya & I Made Rajeg. 2021. The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia. *International Seminar on Austronesian Languages and Literature* 9(1). 44–51. https://ojs.unud.ac.id/index.php/isall/article/view/79856
+
+> Rajeg, Gede Primahadi Wijaya; Rajeg, I Made (2021): Supplementary materials for *The lexicalisation of HAPPINESS in the Malayic varieties of Indonesia*. figshare. Online resource. https://doi.org/10.6084/m9.figshare.15124713
+
+# Introduction
+
+## On the notions of Lexicon and Lexicalisation
 
 One thing that may come up in our mind when hearing the notion **lexicon** is a (set of) word(s) and the meaning, or "information content" [@jezek_lexicon_2016, 5], its expresses. This idea of the lexicon, which may be seen as an oversimplification, reveals two dimensions that constitute a basic consideration in any semiotic system such as language, namely **form** (e.g., lexical form, such as *earth*) and **content** (i.e., meaning evoked by or associated with the form, such as 'planet in the solar system', 'substance on the land surface', etc. associated with the form *earth*) [@jezek_lexicon_2016, 5]. Meaning, when not yet associated with a lexical form, is generically conceived of as a **concept**: "mental categories carrying some information content, which can be said to exist independently from language" [@jezek_lexicon_2016, 5]. 
 
@@ -355,13 +374,13 @@ With respect to the aforementioned view, the notion **lexicalisation** attempts 
 
 In this paper, we adopt the definition of lexicalisation as the lexical encoding or expressions of concept or conceptual categories [@brinton_lexicalization_2005, 18], such as the lexicalisation of the concept 'father's or mother's sister' by the English word *aunt* [@jezek_lexicon_2016, 6]. This is a synchronic view of lexicalisation [@brinton_lexicalization_2005, 18], and may be related with the static interpretation of lexicalisation as a product/outcome, that is, the lexical inventory to express certain concept [@jezek_lexicon_2016, 7]. For instance, *liberty* and *freedom* can be viewed as two lexicalisations of "being able or allowed to do what one wants to do" [@jezek_lexicon_2016, 7].
 
-## Aim of the Study {-}
+## Aim of the Study
 
 This paper provides an account of the lexicalisation of HAPPINESS in the colloquial Malayic varieties of Indonesia. The main aim is to investigate (i) the inventory of lexical forms, and their conceptual categories, that refer to the generic concept of HAPPINESS in English, and (ii) how they vary along the quantitative and sociolinguistic dimensions, particularly along the regional variation [cf. @kristiansen_methodology_2006, 30]. Our study contributes different dimensions and new corpus data to previous quantitative corpus-linguistic studies that have investigated HAPPINESS near-synonyms in (mostly written Standard) Indonesian, especially in terms of internal-variation in their metaphorical usages [@rajeg_metaphorical_2019] and collocational patterns [@rajeg_linguistik_2020].
 
 Inherent in this study is the notion of **onomasiology**, which "takes its starting point in a concept or referent and investigates by which different expressions the concept or referent can be designated, or named" [@grondelaers_lexical_2007, 989]. Our study also represents a facet of the broader area of usage-based, (socio)lexicology [cf. @grondelaers_lexical_2007] that adopts quantitative, corpus-based approach and incorporates "lectal" variation [@kristiansen_methodology_2006, 30]. To pursue our aim, we use large collection of colloquial Malay/Indonesian corpora (cf. the next section), in an attempt to highlight its potential for the study of language variation in the archipelago, given the large body of linguistic and non-linguistic data available in the corpora. With the help of computational data-science tool, we show how descriptive statistical information and geo mapping data can feed into geospatial map for the variation of the lexicalisations.
 
-# Method {-}
+# Method
 
 Since 2015, the colloquial Malay/Indonesian corpora have been made public by the Max Planck Institute for Evolutionary Anthropology (MPI EVA) Jakarta Field Station (JFS) [@gil_data_2015]. MPI EVA JFS engaged in a variety of projects that involve documentation, description, and analyses of the languages of Indonesia. The adult language projects focused on varieties of Malayic languages, ranging from Sumatra, West Kalimantan, Jakarta and the neighbouring area (e.g., West Java), and the Eastern varieties of Malay (i.e., Kupang Malay, Ternate Malay, and Papuan Malay). The complete corpora also include the child-language acquisition project (of Jakarta Indonesian) but it is not the focus of this study. The corpora are downloadable as a set of tabular files with comma-separated values (`.csv`) format. The files are comprised of (i) metadata information, such as language name, project name, region, word counts, inter alia, and (ii) linguistic-proper database, such as the text corpus, tokenised words, morphs^[According to Trask [-@trask_students_1997, 144], a **morph** is "[a]ny piece of morphological material which you want to talk about, without committing yourself to any view of its morphological status".], word lists, and more. The relationship between the files are indicated by the **key** column-id (see Figure [\@ref(fig:mpi-corpus-relationship)](#mpi-corpus-relationship)). These interlocking keys then allow us to merge programmatically one or more files and, eventually, build up the whole collection of the corpora into tabular database (see Table [\@ref(tab:corpora-subset-table)](#corpora-subset-table)).
 
@@ -415,8 +434,8 @@ The Malayic-related corpora are extracted by filtering the database whose JFS la
 
 
 
-```{r mpi-corpus-relationship, fig.cap = "Schematic relationship between files in the MPI EVA JFS corpora (Available from https://lingweb.eva.mpg.de/archive/jakarta/data.php.html)", fig.asp = .4}
-knitr::include_graphics("figures/FIG-mpi-relationship.png")
+```{r mpi-corpus-relationship, fig.cap = "Schematic relationship between files in the MPI EVA JFS corpora (Available from https://lingweb.eva.mpg.de/archive/jakarta/data.php.html)", fig.asp = .9, fig.width=9}
+knitr::include_graphics("figures/FIG-mpi-relationship.png", dpi = 300)
 ```
 
 Next, we retrieved the morphs glossed as 'happy', 'glad', and 'joy(ful)'. Note that the values of the retrieved `morphs` column are the same with those in the `word_form` column; for this reason and succinctness, we use "morphs" in replace of "word_forms". We excluded the derivatives (e.g., as derived verbs or derived nouns) of the morphs, which will be part of a future work on their morphological profiles. Table [\@ref(tab:happy-word-snippet)](#happy-word-snippet) shows examples of the database (the `Phon. transc.`^[Only `r round(nrow(filter(malayic_happy, !is.na(phonetic_transcription)))/nrow(malayic_happy) * 100, 2)`% of the total `r nrow(malayic_happy)` cases of the HAPPINESS lexicon database contain the phonetic transcription information.] column is the phonetic transcription of the values in the `Morphs` column).
@@ -440,9 +459,9 @@ malayic_happy %>%
 In the analyses, we group a set of related morphs under the same conceptual categories that are labelled in standard Indonesian. For instance, the conceptual category or concept of SENANG subsumes such morphs as *snang*, *sonaŋ*, *seneng*, *sanang*, inter alia, that differ slightly in terms of their phonemic structures, such as the vowels. Another example is the concept BAHAGIA that can be lexicalised by *bahɐgiɐ*, *bahagié*, *bahagiya*, among others. The quantitative analyses involve descriptive statistics, namely frequency count and percentages for univariate and bivariate designs [@gries_statistics_2013, 102, 136]. In the univariate descriptive statistics, we tally the total frequency of morphs lexicalising a given concept; this way, we can assess the relative prominence (statistically speaking) of the Malayic conceptual categories for HAPPINESS (Figure [\@ref(fig:FIG-lemma-HAPPY-barplot)](#FIG-lemma-HAPPY-barplot)). The bivariate analysis captures the frequency distribution of the top-five Malayic HAPPINESS concepts by regions, both at the level of token and type frequencies. The token frequency of a concept by region refers to the total occurrences of the concept in the corpus of the region. The type frequency of a region refers to the number of different HAPPINESS concepts lexicalised in the given region. Geo spatial visualisations are included to capture the regional distribution of the HAPPINESS concepts and morphs more intuitively. All data pre-processing, statistical analyses, and visualisations are performed in RStudio using the R programming language [@rcore2021]. We wrote the paper fully in R Markdown Notebook that interleaves the regular texts and programming codes to run the quantitative and graphical analyses. The Notebook and the data are published at *Open Science Framework* (OSF) [see @rajeg_codedata_2021 for the download link].
 
 
-# Findings and Discussion {-}
+# Findings and Discussion
 
-## Distribution of the concepts of HAPPINESS in colloquial Malayic varieties {-}
+## Distribution of the concepts of HAPPINESS in colloquial Malayic varieties
 
 To begin with, we discuss the prominent concepts referring to HAPPINESS in the Malayic varieties. As mentioned in the previous section, the concepts are postulated from a set of morphs. Figure [\@ref(fig:FIG-lemma-HAPPY-barplot)](#FIG-lemma-HAPPY-barplot) shows the relative distribution (in percentages) of these concepts in the database. 
 
@@ -464,7 +483,7 @@ malayic_happy_freq_lemma %>%
 
 It can be observed that morphs lexicalising the concept `r pull(filter(malayic_happy_lemma_topfive, n == max(n)), lemma)` are the most prominent for the Malayic varieties in Indonesia (N=`r pull(filter(malayic_happy_lemma_topfive, n == max(n)), n)`; `r pull(filter(malayic_happy_lemma_topfive, n == max(n)), perc_lemma)`% of the total tokens of all concepts); it is followed by `r malayic_happy_lemma_topfive$lemma[2]` (N=`r malayic_happy_lemma_topfive$n[2]`; `r malayic_happy_lemma_topfive$perc_lemma[2]`%), `r malayic_happy_lemma_topfive$lemma[3]` (N=`r malayic_happy_lemma_topfive$n[3]`; `r malayic_happy_lemma_topfive$perc_lemma[3]`%), `r malayic_happy_lemma_topfive$lemma[4]` (N=`r malayic_happy_lemma_topfive$n[4]`; `r malayic_happy_lemma_topfive$perc_lemma[4]`%), and `r malayic_happy_lemma_topfive$lemma[5]` (N=`r malayic_happy_lemma_topfive$n[5]`; `r malayic_happy_lemma_topfive$perc_lemma[5]`%). The concept (K)AROʔ is attested in the `r paste(unique(malayic_happy_freq$languoid_name_new[malayic_happy_freq$lemma == "(K)AROʔ"]), collapse = " and ")` languages spoken in the region of `r unique(malayic_happy_freq$region[malayic_happy_freq$lemma == "(K)AROʔ"])` (cf. Figure [\@ref(fig:FIG-top-five-HAPPY-across-region)](#FIG-top-five-HAPPY-across-region)), and postulated from these morphs: *`r paste(malayic_happy_freq$morphs[malayic_happy_freq$lemma == "(K)AROʔ"], collapse = ", ")`*. The prominence of SENANG and BAHAGIA in the colloquial Malayic varieties corroborates findings from previous experimental study on Indonesian emotion lexicon [cf. @shaver_structure_2001, 208], showing that SENANG and BAHAGIA are two of the five prototypical conceptual categories for HAPPINESS in Indonesian (together with GEMBIRA, CERIA, and RIANG).
 
-## Distribution of the top-five HAPPINESS concepts by regions {-}
+## Distribution of the top-five HAPPINESS concepts by regions
 
 This sub-section discusses the distribution of the top-five concepts across the regions in the archipelago. This is visualised in Figure [\@ref(fig:FIG-top-five-HAPPY-across-region)](#FIG-top-five-HAPPY-across-region). The points represent certain areas within the region. If the database provides specific areas/location for a given region, but missing the geo mapping data (i.e., latitude and longitude) for these areas (indicated by `NA` in the database), we identified their approximate latitude and longitude information via Google Maps. For instance, data for the Jambi Province subset includes the geo mapping information for these specific projects: `r malayic_happy %>% filter(str_detect(region, 'Jambi')) %>% select(region, project_name, data_set_name, latitude, longitude) %>% filter(!is.na(latitude)) %>% pull(data_set_name) %>% unique() %>% paste(collapse = '; ')`. However, the other projects in the same region do not have such geo mapping data: `r malayic_happy %>% filter(str_detect(region, 'Jambi')) %>% select(region, project_name, data_set_name, latitude, longitude) %>% filter(is.na(latitude)) %>% pull(data_set_name) %>% unique() %>% paste(collapse = '; ')`. For these projects lacking the geo mapping data, we retrieved them from Google Map by searching the specific areas mentioned as the project and/or data set names. 
 
@@ -594,7 +613,7 @@ As can be seen from all panels in Figure [\@ref(fig:FIG-suka-as-like-vs-happy)](
 
 The next analysis to report in this sub-section is the type frequency analysis, measuring the number of different HAPPINESS concepts attested in each region. We found that, of the eleven regions, the `r numbers2words(nrow(filter(malayic_happy_lemma_typefreq_by_region, n_type_lemma > mean(malayic_happy_lemma_typefreq_by_region$n_type_lemma))))` regions exhibiting the highest type frequency are `r region_with_above_average_typefreq$region[region_with_above_average_typefreq$n_type_lemma == max(region_with_above_average_typefreq$n_type_lemma)]` (`r numbers2words(region_with_above_average_typefreq$n_type_lemma[1])` different types of the HAPPINESS concepts), `r region_with_above_average_typefreq$region[2]` (`r numbers2words(region_with_above_average_typefreq$n_type_lemma[2])` types), and three other regions (i.e., `r paste(region_with_above_average_typefreq$region[3:nrow(region_with_above_average_typefreq)], collapse = ", ")`) with ties (`r numbers2words(unique(region_with_above_average_typefreq$n_type_lemma[3:nrow(region_with_above_average_typefreq)]))` types).
 
-## Distribution of morphs across the region {-}
+## Distribution of morphs across the region
 
 In the previous two sub-sections, we focus on generic, abstract level of conceptual categories, referred to by the specific morphs. It is also possible now to explore concrete, lexicalisations of each concept across the relevant regions, and reveal the phonemic variation of morphs for a given concept both qualitatively and quantitatively. For the reason of space, we illustrate this idea with SENANG^[Within the `figures` folder in the supplementary materials repository [@rajeg_codedata_2021], we included two plots showing distribution of the morphs evoking BAHAGIA and HAPPY as in Figure [\@ref(fig:FIG-senang-ortografis-data)](#FIG-senang-ortografis-data).]. Figure [\@ref(fig:FIG-senang-ortografis-data)](#FIG-senang-ortografis-data) maps out all morphs referring to SENANG; the morphs labels are available from the `morphs.csv` file (cf. Figure [\@ref(fig:mpi-corpus-relationship)](#mpi-corpus-relationship)) and incorporated into the `Morphs` column (cf. Table [\@ref(tab:happy-word-snippet)](#happy-word-snippet)).
 
@@ -751,7 +770,7 @@ indoplot +
 ```
 
 
-# Conclusion {-}
+# Conclusion
 
 This corpus-based study reveals that HAPPINESS is most predominantly lexicalised by morphs referring to the concept SENANG in the colloquial Malayic varieties in Indonesia, corroborating a previous experimental study on HAPPINESS conceptual categories in Indonesian [@shaver_structure_2001, 208]. It is also demonstrated that each region varies in the distribution of each HAPPINESS concepts (e.g., variation in terms of the type and token frequencies of the concepts per region). At a more specific level, we show that the morphs lexicalising a given concept (e.g., SENANG) in certain regions also exhibit qualitative (e.g., the phonemic structure) and quantitative variations (e.g., the number of different morphs attested in a region and the morphs' token frequencies). To conclude, we hope to have provided a glimpse of insights from exploring the open-access corpora of colloquial Malayic varieties in the Indonesian archipelago for the study of emotion lexicalisation in the context of regional variation.
 
